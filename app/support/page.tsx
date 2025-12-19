@@ -134,7 +134,7 @@ export default function Support() {
               {popularArticles.map((article, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href="/support"
                   className="flex items-center justify-between p-4 bg-white border border-slate-200 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all duration-300 group"
                 >
                   <span className="text-sm text-slate-700 group-hover:text-cyan-600">
@@ -205,9 +205,12 @@ export default function Support() {
                 <p className="text-sm text-cyan-100 mb-4">
                   Chat with us instantly
                 </p>
-                <button className="btn-primary bg-white text-purple-600 hover:bg-gray-100 active:scale-95 transition-transform text-sm px-6 py-2">
+                <a
+                  href="/contact"
+                  className="btn-primary bg-white text-purple-600 hover:bg-gray-100 active:scale-95 transition-transform text-sm px-6 py-2 inline-block"
+                >
                   Start Chat
-                </button>
+                </a>
               </div>
             </div>
           </div>

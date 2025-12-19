@@ -180,9 +180,12 @@ export default function Contact() {
                         <p className="text-cyan-100 text-sm mb-4">
                           Chat with a support agent in real-time
                         </p>
-                        <button className="btn-primary bg-white text-purple-600 hover:bg-gray-100 active:scale-95 transition-transform text-sm px-4 py-2">
+                        <a
+                          href="/contact"
+                          className="btn-primary bg-white text-purple-600 hover:bg-gray-100 active:scale-95 transition-transform text-sm px-4 py-2 inline-block"
+                        >
                           Start Chat Now
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -245,6 +248,7 @@ export default function Contact() {
     </main>
   );
 }
+
 
 
 

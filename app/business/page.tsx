@@ -1,3 +1,5 @@
+"use client";
+
 import { 
   Building2, 
   Network, 
@@ -123,12 +125,20 @@ export default function Business() {
                 <a
                   href="#contact"
                   className="btn-primary btn-solid active:scale-95 transition-transform"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 >
                   Talk to an Expert
                 </a>
                 <a
                   href="#solutions"
                   className="btn-primary btn-outline active:scale-95 transition-transform"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 >
                   Explore Solutions
                 </a>
@@ -330,9 +340,12 @@ export default function Business() {
                       <p className="text-gray-600 text-sm">Chat with an expert now</p>
                     </div>
                   </div>
-                  <button className="btn-primary btn-solid w-full active:scale-95 transition-transform">
+                  <a
+                    href="/contact"
+                    className="btn-primary btn-solid w-full active:scale-95 transition-transform inline-block text-center"
+                  >
                     Start Chat
-                  </button>
+                  </a>
                 </div>
               </div>
 

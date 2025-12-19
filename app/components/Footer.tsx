@@ -14,7 +14,7 @@ export default function Footer() {
       title: "Products",
       links: [
         { label: "Mobile Plans", href: "/mobile" },
-        { label: "Home Fiber", href: "#fiber" },
+        { label: "Home Fiber", href: "/coverage" },
         { label: "Business Solutions", href: "/business" },
       ],
     },
@@ -37,10 +37,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Facebook, href: "https://facebook.com/nexustelecom", label: "Facebook" },
+    { icon: Twitter, href: "https://twitter.com/nexustelecom", label: "Twitter" },
+    { icon: Instagram, href: "https://instagram.com/nexustelecom", label: "Instagram" },
+    { icon: Linkedin, href: "https://linkedin.com/company/nexustelecom", label: "LinkedIn" },
   ];
 
   return (
